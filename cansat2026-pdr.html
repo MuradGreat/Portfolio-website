@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CanSat 2026 | Preliminary Design Review</title>
+    <link rel="stylesheet" href="style.css">
+
+<script id="MathJax-script" async 
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body class = "cansat-page">
+
+    <nav class="navbar">
+        <h2>Murad</h2>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="about.html">About Me</a>
+            <a href="about.html#contact">Contact</a>
+        </div>
+    </nav>
+
+    <section class="project-hero">
+        <div class = "project-hero-text">
+        <h1>CanSat 2026</h1>
+
+        <h2>Preliminary Design Review (PDR)</h2>
+
+        <p>
+            Mechanical Design Engineer | CAD Design | Structural Integration
+        </p>
+
+        <p>
+            A detailed overview of the Preliminary design process, engineering decisions, and subsystem development for Cansat 2026 competition project.
+        </p>
+
+        </div>
+
+        <div class = "project-hero-image">
+            <img src="images/cansat2026/Overview.png" alt="CanSat 2026 Render">
+
+        </div>
+    </section>
+
+    <section class = "project-info">
+        <h2>Project Information</h2>
+        <div class = "info-grid">
+
+        <div class = "info-card">
+            <h3>Competition:</h3>
+            <p>CanSat 2026</p>
+        </div>
+
+        <div class = "info-card">
+            <h3>Role:</h3>
+            <p>Mechanical Design Engineer</p>
+        </div>
+        <div class = "info-card">
+            <h3>Software:</h3>
+            <p>SolidWorks</p>
+        </div>
+        </div>
+
+
+    </section>
+
+    <section class = "project-overview">
+        <h2>Project Overview</h2>
+
+        <p>       
+        CanSat is an international engineering competition in which teams
+        design, build, and test a satellite that fits within the dimensions
+        of a standard soda can. After being launched to altitude, the CanSat
+        performs a mission while safely descending under a parachute.</p>
+
+        <p>
+        For the 2026 competition, our team developed a complete CanSat system
+        capable of meeting the mission requirements while maintaining structural
+        reliability, efficient use of internal space, and controlled recovery.
+        </p>
+        <p>
+        As the Mechanical Design Engineer, I was responsible for designing the
+        mechanical structure, optimizing the internal layout, performing CAD
+        modeling, and supporting engineering calculations throughout the
+        Preliminary Design Review phase.
+        </p>
+    </section>
+
+    <section class = "mission-overview">
+        <h2>Mission overview</h2>
+
+        <p>
+            The CanSat 2026 mission consists of two main subsystems: a <strong>Container</strong>
+            and a <strong>Science Payload</strong>. The container protects the payload during launch 
+            and releases it at the designated altitude, while the Science Payload performs the primary mission during descent.
+        </p>
+
+        <p>
+            Our project introduces <strong>SIGMA</strong>, an active landing control system designed to improve descent 
+            stability and landing precision. Unlike conventional passive recovery systems, SIGMA actively controls the payload's motion
+            by detecting instabilities and generating corrective mechanical responses throughout the descent.
+        </p>
+
+    </section>
+
+    <section class = "mission-requirements">
+        <h2>Mission Requirements</h2>
+        <ul>
+            <li>Launch altitude: 1500-1800 m</li>
+            <li>Container descent velocity: 12-14 m/s</li>
+            <li>Payload Separation altitude: approximately 1000 m</li>
+            <li>Science Payload descent velocity: 8-10 m/s</li>
+            <li>Continuous telemetry transmission at 1 Hz</li>
+            <li>Live video transmission to the ground station</li>
+            <li>Store all telemetry and video on the onboard SD card</li>
+            <li>Transmit data for 10 seconds after landing before automatic shutdown</li>
+        </ul>
+
+    </section>
+
+    <section class="my-responsibilities">
+
+    <h2>My Responsibilities</h2>
+
+    <ul>
+        <li>Designed the mechanical structure of the Science Payload.</li>
+
+        <li>Developed the complete CAD assembly using SolidWorks.</li>
+
+        <li>Optimized the internal layout for efficient use of space.</li>
+
+        <li>Performed mass budgeting and component placement.</li>
+    </ul>
+
+</section>
+
+<section class = "design">
+
+    <h2>Mechanical Design</h2>
+
+    <p>
+        The mechanical design of the CanSat was developed to satisfy the
+        competition requirements while ensuring structural integrity,
+        efficient use of internal space, ease of manufacturing, and reliable
+        deployment of all mechanical subsystems.
+    </p>
+
+    <div class = "design-overview">
+
+        <h3>Overall design</h3>
+
+        <p>
+        The complete system consists of a Container and a Science Payload.
+        The Container protects the payload during launch and descent until
+        separation. After release, the Science Payload deploys the active
+        landing mechanism and performs the mission independently.
+        </p>
+    </div>
+
+    <div class = "design-component container">
+        <h3>Container</h3>
+
+        <img src="images/cansat2026/Container.png" alt="container">
+
+        <p>The Container protects the Science Payload from external impacts and environmental conditions while providing aerodynamic stability. 
+            It includes a rectangular slot with a circular cutout for the payload separation mechanism,
+            and circular holes for parachute attachment and minor mass balancing. 
+            Since it contains no sensitive electronics,
+            minor deformations do not affect mission performance.
+</p>
+    </div>
+
+    <div class = "design-component science-payload">
+        <h3>Science Payload</h3>
+
+        <img src="images/cansat2026/Payload.png" alt="science-payload">
+
+        <p>The payload consists of several independent sections, each serving a specific purpose. 
+            These sections are assembled using M3 steel bolts,
+             with washers used where necessary to improve stability and reduce vibrations.</p>
+
+
+    </div>
+
+
+
+<div class = "design-component motor-section">
+
+    <h3>Motor Section</h3>
+
+    <img src="images/cansat2026/motorSection.png" alt="motor-section">
+    <p>The motor section includes four mounting points for the motor supports, secured with M3 bolts and nuts. A central compartment houses the servo motor, which rotates a shaft to provide a reliable payload separation mechanism. The section is connected to the linear actuator section using M3 bolts. Two 9 mm diameter holes are provided for routing wires to the payload section.</p>
+</div>
+
+<div class = "design-component linear-actuator">
+    <h3>Linear Actuator Section</h3>
+
+    <img src="images/cansat2026/linearActuator.png" alt="linear-actuator">
+
+    <p>The linear actuator section contains two holes for wire routing, a motor holder, and mounting points for two linear actuators. The motor holder secures the motor arms during descent. Upon receiving a deployment command, the actuators lift the holder, releasing the motor arms so they can unfold and allow the motors to operate at the required thrust.
+</p>
+</div>
+
+<div class = "design-component parachute-section">
+    <h3>Parachute Section</h3>
+
+    <img src="images/cansat2026/parachuteSection.png" alt="parachute">
+
+    <p>The parachute section has a slightly smaller diameter than the payload to prevent interference during assembly. It is attached to the payload using an M3 bolt and nut and is held in place by a servo motor through its horn. Since the parachute section is lightweight, an SG90 servo motor is sufficient for deployment. The container parachute is attached through multiple circular holes around the upper body, ensuring even load distribution, balanced descent, and reduced rotational instability.
+</p>
+</div>
+
+<div class = "design-component motor-stick">
+    <h3>Motor Stick Section</h3>
+
+    <img src="images/cansat2026/MotorStick.png" alt="motor-stick">
+
+    <p>The motor stick serves as the mounting structure for the propulsion motors.
+A hook-shaped feature at the top of the component locks the motor arms in
+their folded position during descent. Once released by the deployment
+mechanism, the motor arms unfold, allowing the propulsion system to operate.</p>
+</div>
+
+<div class = "engineering-analysis">
+    <h3>Descent rate calculations</h3>
+    <h4>Payload + Container </h4>
+    <p>By setting the system to constant velocity position, we equate the weight of the system to its aerodynamic drag</p>
+    <p>\(W = F_D\)</p>
+    <p>\(mg = \frac{1}{2}\rho V^2 C_D A \)</p>
+    <p>
+where \(F_D\) is the drag force, \(\rho\) is air density,
+\(V\) is descent velocity, \(C_D\) is the drag coefficient,
+and \(A\) is the reference area.
+</p>
+
+<p>Separating the area</p>
+<p>    \[
+    A=\frac{2mg}{\rho V_t^2 C_D}
+    \]</p>
+
+    <p>
+        For the container and payload system:
+    </p>
+    <ul>
+        <li>Mass: 0.72 kg</li>
+        <li>Target descent velocity: 15 m/s</li>
+        <li>Drag coefficient: 1.5</li>
+        <li>Density: 1.225 kg/m^3</li>
+    </ul>
+    <h3>Structural Stress Analysis</h3>
+    <p>After calculations, the required parachute area was determined as:</p>
+    \[
+A=0.0854\,m^2
+\]
+
+<p>
+Using the circular area relationship, the corresponding parachute diameter is:
+</p>
+
+\[
+D=0.33\,m
+\]
+   <p>
+For stable aerodynamic descent, the parachute suspension line length was selected
+as 1.5 times the parachute diameter. Therefore, the estimated rope length is:
+</p>
+
+\[
+L=1.5D=1.5(0.33)=0.50\,m
+\]
+
+    <p>All potential structural hazards were evaluated, with the (motor mount) identified as the most critical component due to the mounting holes, which create stress concentrations.
+        According to Solidworks estimations, the cross-sectional area for the motor sticks is estimated to be 655.19 mm^2
+        and a second moment of inertia is 36,502.91 mm^4. 
+    </p>
+
+    <p>At motors' peak thrust condition, the thrust generated is expected not to exceed 10 N. By applying the normal stress formula, we obtain</p>
+
+\[
+A=655.19 \times 10^{-6} = 0.00065519\,m^2
+\]
+
+<p>
+The normal stress was calculated using:
+</p>
+
+\[
+\sigma=\frac{F}{A}
+\]
+
+<p>
+Therefore:
+</p>
+
+\[
+\sigma=\frac{10}{0.00065519}
+\]
+
+\[
+\sigma=15262.3\,Pa
+\]
+
+<p>
+The calculated normal stress is approximately:
+</p>
+
+\[
+\boxed{\sigma=15.26\,kPa}
+\]
+
+<p>The estimated stress remains well within the allowable limits of the material. 
+    To increase structural reliability and reduce deformation under dynamic loading,
+    the motor mount thickness was increased, providing an additional safety margin.
+However, manufacturing factors such as layer orientation and stress concentrations
+around mounting holes were considered during the design process.
+</p>
+
+<h3>Bending Stress Analysis</h3>
+
+<p>
+    The bending moment was calculated using the cross-sectional area of the motor stick, 
+    which is a rectangle 6x11 mm. The length of the motor stick is 60 mm. With the thrust of 10 N, 
+    the moment of force and the moment of inertia are estimated:
+</p>
+<p>M = Fxd = 10 x 0.06 = 0.6 Nm </p>
+<p>
+For a rectangular cross-section, the second moment of inertia is:
+</p>
+
+\[
+I=\frac{bh^3}{12}
+\]
+
+\[
+I=\frac{0.011(0.006)^3}{12}
+\]
+
+\[
+I=1.98\times10^{-10}m^4
+\]
+<p>The bending stress is then calculated</p>
+\[
+\sigma_b=\frac{My}{I}
+\]
+
+<p>
+For the maximum bending stress:
+</p>
+
+\[
+\sigma_{max}=\frac{Mc}{I}
+\]
+
+<p>
+where \(c\) represents the distance from the neutral axis to the outer surface:
+</p>
+
+\[
+c=\frac{h}{2}=0.003m
+\]
+
+<p>
+Substituting the values:
+</p>
+
+\[
+\sigma_{max}=
+\frac{(0.6)(0.003)}
+{1.98\times10^{-10}}
+\]
+
+\[
+\sigma_{max}=9.09\times10^6 Pa
+\]
+
+\[
+\sigma_{max}=9.09 MPa
+\]
+
+<h3>Factor of safety </h3>
+<p>
+The yield strength of PETG is approximately 50-70 MPa.
+Using the conservative value of 50 MPa, the factor of safety is:
+</p>
+
+\[
+FOS=\frac{50}{9.09}=5.5
+\]
+
+<p>
+Therefore, the component maintains an acceptable safety margin under the expected loading condition.
+</p>
+<p>
+    Due to the symmetrical cross-section, the maximum tensile and compressive
+bending stresses have equal magnitude.
+The torsional stress is considered negligible for this loading problem.
+</p>
+
+</div>
+
+<div class = "separation-mechanism">
+    <h3>Separation mechanism</h3>
+    <p>The separation mechanism consists of a servo motor mounted at the top of the payload inside the motor section. 
+        A shaft is attached to the servo and rotates upon receiving a manual activation signal, enabling payload separation.
+        The servo motor will be fixed using adhesive bonding, with additional supports added if necessary. Once the signal is sent, the shaft will be rotated by the servo motor
+in the clockwise direction and once the shaft is aligned with the
+rectangular hole, the payload will fall and thus separate from the
+container.A small clearance is provided between the shaft and the
+slot to prevent jamming and ensure reliable release under minor
+disturbances</p>
+</div>
+
+<div class = "separation-images">
+    <img src="images/cansat2026/Before.png" alt="Before">
+<img src="images/cansat2026/After.png" alt="after">
+
+</div>
+
+<div class = "material-selection">
+    <h3>Material selection</h3>
+
+    <p>PETG was selected as the structural material because it provides a good balance between strength, 
+        toughness, and ease for 3D printing. Compared to PLA, PETG has higher impact resistance and better flexibility, 
+        reducing the risk of brittle fracture under dynamic loading. During mission, the structure is subjected to tensile, compressive, 
+        torsional, bending, and impact loads during rocket launch, payload session, parachute descent, and landing. </p>
+</div>
+
+<div class = "comparison-table">
+    <h3>Material Comparison</h3>
+    <table>
+        <tr>
+            <th>Properties</th>
+            <th>PLA</th>
+            <th>PETG</th>
+            <th>ABS</th>
+        </tr>
+        <tr>
+            <td>Yield Strength(MPa)</td>
+            <td>60</td>
+            <td>50</td>
+            <td>40</td>
+        </tr>
+        <tr>
+            <td>Young's modulus(GPa)</td>
+            <td>2.1</td>
+            <td>2.2</td>
+            <td>3.5</td>
+        </tr>
+        <tr>
+            <td>Density(kg/m^3)</td>
+            <td>1040</td>
+            <td>1270</td>
+            <td>1240</td>
+        </tr>
+        <tr>
+            <td>Poisson's ratio</td>
+            <td>0.35</td>
+            <td>0.38</td>
+            <td>0.36</td>
+        </tr>
+
+    </table> 
+</div>
+
+<div class = "mass-budget">
+    <h3>Mass budget</h3>
+    <table>
+        <tr>
+            <th>Component</th>
+            <th>Mass(grammes)</th>
+        </tr>
+
+        <tr>
+            <td>Payload</td>
+            <td>248.67</td>
+        </tr>
+        <tr>
+            <td>Container</td>
+            <td>300</td>
+        </tr>
+        <tr>
+            <td>Linear Actuator Section</td>
+            <td>93.32</td>
+        </tr>
+        <tr>
+            <td>4 Motor Sticks</td>
+            <td>34.2</td>
+        </tr>
+        <tr>
+            <td>Motor Holder</td>
+            <td>24</td>
+        </tr>
+        <tr>
+            <td>Mechanical joints</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>Parachute Section</td>
+            <td>52.27</td>
+        </tr>
+        <tr>
+            <td>Parachute</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>Beak mechanism</td>
+            <td>23.87</td>
+        </tr>
+        <tr>
+            <td>Motor Section</td>
+            <td>125.87</td>
+        </tr>
+        <tr>
+            <td>Total</td>
+            <td>942.29</td>
+        </tr>
+    </table>
+</div>
+
+
+<h3>Conclusion</h3>
+
+<p>
+The mechanical design satisfies the CanSat mission requirements by providing
+structural protection, reliable payload separation, and controlled deployment
+of the active landing system. Further testing will focus on mechanism validation
+and performance optimization.
+</p>
+
+</div>
+
+
+</section>
+
+</body>
+</html>
