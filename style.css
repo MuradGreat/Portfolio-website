@@ -1066,5 +1066,13 @@ html {
     box-shadow: 0 12px 30px rgba(78,109,255,.15);
     
 }
+.hero-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
 
 
