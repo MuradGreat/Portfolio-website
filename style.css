@@ -1073,6 +1073,162 @@ html {
     text-align: center;
 }
 
+@media (max-width: 768px) {
+
+    /* Navbar */
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .nav-links {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+    /* Hero */
+    .hero {
+        padding: 100px 20px 40px;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    /* General sections */
+    .projects,
+    .about,
+    .skills {
+        width: 100%;
+        padding: 15px;
+        margin: 100px auto;
+    }
+
+    /* About */
+    .about-top {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .profile-photo img {
+        width: 200px;
+        height: 200px;
+    }
+
+    /* Certificates */
+    .certificate {
+        flex-direction: column;
+        text-align: center;
+        padding: 25px;
+        gap: 25px;
+    }
+
+    .certificate-image img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* CanSat */
+    .cansat-page section {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .cansat-page .project-hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cansat-page .project-hero h1 {
+        font-size: 40px;
+    }
+
+    .cansat-page .project-hero-image {
+        width: 100%;
+        height: 280px;
+    }
+
+    .cansat-page .info-grid {
+        flex-direction: column;
+    }
+
+    /* Internship */
+    .internship-hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .objectives-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Tables */
+    .internship-table,
+    .spec-table table,
+    .cansat-page table {
+        font-size: 14px;
+    }
+
+    /* Images */
+    .day-images {
+        justify-content: center;
+    }
+
+    .day-images img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* Large cards */
+    .skills-gained,
+    .internship.report,
+    .adell-conclusion,
+    .text-template {
+        padding: 25px;
+    }
+}
+@media (max-width: 480px) {
+
+    .nav-links {
+        gap: 8px;
+        font-size: 14px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero-button {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .projects-card p,
+    .about p,
+    .about-description p {
+        font-size: 16px;
+    }
+
+    .cansat-page .project-hero h1 {
+        font-size: 34px;
+    }
+
+    .cansat-page section {
+        padding: 16px;
+    }
+}
+
 
 
 
